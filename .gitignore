@@ -1,0 +1,12 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.settings
+*.class
+
+
+# Dependency directories (remove the comment below to include it)
+classes/
