@@ -1,4 +1,4 @@
-package org.training;
+package servlets;
 
 import java.io.IOException;
 
@@ -10,17 +10,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class RegisterPage
+ * Servlet implementation class HomeServlet
  */
-@WebServlet("/registerForm")
-public class RegisterForm extends HttpServlet {
+@WebServlet("/home")
+public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatch = request.getRequestDispatcher("register.html");
+		RequestDispatcher dispatch = request.getRequestDispatcher("index.jsp");
 		dispatch.include(request, response);
 	}
 
